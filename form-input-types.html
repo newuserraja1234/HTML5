@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="fname">First Name</label>
+        <input type="text" name="" id="fname" minlength="4" maxlength="8" size="10">
+        <br/>
+        <label for="lname">Last Name</label>
+        <input type="text" name="" id="lname">
+        <br/>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset"><br/>
+        <input type="week" name="" id=""><br/>
+        <select name="editiors" id="" multiple>
+            <option value="none">---Select---</option>
+            <option value="VSCODE">VSCODE</option>
+            <option value="Sublime">Sublime</option>
+        </select>
+        <br/>
+        <!-- Other way to provide option menu -->
+        <input list="editors" name="editor"/>
+        <datalist id="editors">
+            <option value="vscode">vscode</option>
+            <option value="sublime">sublime</option>
+        </datalist>
+        <!-- Example of radio type-->
+        <fieldset>
+            <legend>Please select your Contact method:</legend>
+            <input type="radio" name="contact" id="email"/>
+            <label for="contactchoice1">Email</label>
+            <input type="radio" name="contact" id-="phone"/>
+            <label for="contactchoice2">Phone</label>
+        </fieldset>
+         <!-- Example of range type -->
+        <input type="range" id="developer" name="volume" min="0" max="11"/> 
+        <label for="developer">MERN Stack Developer</label>
+        <input type="range" id="problemsolver" name="volume" min="0" max="100"/>
+        <label for="problemsolver">DSA</label>
+        <!-- Example of checkbox type -->
+        <p>Sucess demands:-</p>
+        <input type="checkbox" name="hardwork" id="hardwork">
+        <label for="hardwork">Hardwork</label>
+        <input type="checkbox" name="Consistency" id="Consistency">
+        <label for="Consistency">Consistency</label>
+        <input type="checkbox" name="Patience" id="Patience">
+        <label for="Patience">Patience</label>
+    </form>
+    
+</body>
+</html>

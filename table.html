@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td, th {
+            border: 1px solid #000;
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #848383;
+        }
+    </style>
+</head>
+<body>
+    <!-- table>tr>th*3 -->
+    <table>
+        <tr>
+            <th>Country</th>
+            <th>Country Code</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>IN</td>
+            <td>india@google.com</td>
+        </tr>           
+        <tr>
+            <td>United States of America</td>
+            <td>USA</td>
+            <td>usa@google.com</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>JN</td>
+            <td>japn@google.com</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>CN</td>
+            <td>china@google.com</td>
+        </tr>
+    </table>
+    <br/>
+    <table>
+        <tr>
+            <th colspan="1">Country</th>
+            <td>India</td>
+            <td>Japan</td>
+        </tr>
+        <tr>
+            <th>Country Code</th>
+            <th>IN</th>
+            <th>JP</th>
+        </tr>
+    </table>
+    <br/>
+    <!-- Example of colgroup -->
+    <table>
+        <caption>Awesome Caption</caption>
+        <tr>
+            <td>Lime</td>
+            <td>Orange</td>
+            <td>Lemon</td>
+        </tr>
+        <tr>
+            <td>Green</td>
+            <td>Orange</td>
+            <td>Yellow</td>
+        </tr>
+    </table>
+</body>
+</html>
